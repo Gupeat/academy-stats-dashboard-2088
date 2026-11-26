@@ -1,0 +1,8 @@
+{
+  "path": "docs/recordings/ac3-venue-switch.webm",
+  "sha256": "358db7cf041d1499058bac023f389a32b00df78f4064ea954040b4e16af472a5",
+  "bytes": 4348497,
+  "generatedAt": 1795675471487,
+  "method": "Playwright recordVideo（Edge headless，1440×1100，固定时钟 2026-11-25T10:00+08:00）",
+  "interaction": "hover 口径提示 → 云岭会所筛选 → 排序升/降 → 青屿会所空状态 → 重置筛选"
+}

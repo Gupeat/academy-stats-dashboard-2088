@@ -1,0 +1,10 @@
+$ node scripts/check-stats.mjs --self-test
+# exit=0
+# duration=180ms
+
+PASS 反例被拒绝：出勤大于报名 → 出勤大于报名: sess-0001
+PASS 反例被拒绝：评价总分超过 5 分制上限 → 评价总分超过 5 分制上限: sess-0001
+PASS 反例被拒绝：课期 id 重复 → 课期 id 重复: sess-0001
+PASS 反例被拒绝：引用未知课程 → 课期引用未知课程: sess-0001
+PASS 反例被拒绝：删除指标口径 → 缺少指标口径: reviewRate
+RESULT: PASS self-test 5/5 反例被独立校验器拒绝

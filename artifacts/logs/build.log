@@ -1,0 +1,19 @@
+$ node scripts/build.mjs
+# exit=0
+# duration=64015ms
+
+[build] typecheck
+vite v5.4.11 building for production...
+transforming...
+✓ 4499 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                       0.93 kB │ gzip:   0.56 kB
+dist/assets/index-BrmIaS4Z.css        6.84 kB │ gzip:   1.89 kB
+dist/assets/tdesign-CW4a_cX0.css    533.66 kB │ gzip:  55.87 kB
+dist/assets/index-Dg4qLK90.js        77.42 kB │ gzip:  16.29 kB
+dist/assets/react-CUJ3Yvll.js       160.93 kB │ gzip:  52.40 kB
+dist/assets/tdesign-DVVHaRPp.js     636.62 kB │ gzip: 186.33 kB
+dist/assets/echarts-Co_c3tkW.js   1,045.81 kB │ gzip: 347.47 kB
+✓ built in 56.32s
+[build] 完成

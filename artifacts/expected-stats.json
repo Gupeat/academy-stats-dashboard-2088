@@ -1,0 +1,1275 @@
+{
+  "today": "2026-11-25",
+  "timezone": "Asia/Shanghai",
+  "source": {
+    "mock": "mock/academy-stats.json",
+    "mockSha256": "5b860fba908e86d78990e8f090b6da663cd92c53aa7afa2f7f1da1443da44866",
+    "definitions": "mock/metric-definitions.json",
+    "definitionsSha256": "25750c5ad41020201aec240fffb044b040bb4a89fbd726198206145709552e04",
+    "sessions": 268,
+    "courses": 12
+  },
+  "definitions": [
+    {
+      "key": "effectiveRegistrations",
+      "label": "有效报名数",
+      "unit": "count"
+    },
+    {
+      "key": "attendanceRate",
+      "label": "出勤率",
+      "unit": "percent"
+    },
+    {
+      "key": "bootcampCompletionRate",
+      "label": "训练营完课率",
+      "unit": "percent"
+    },
+    {
+      "key": "satisfactionAvg",
+      "label": "满意度均分",
+      "unit": "score"
+    },
+    {
+      "key": "reviewRate",
+      "label": "评价率",
+      "unit": "percent"
+    },
+    {
+      "key": "courseConnections",
+      "label": "课程带来的连接数",
+      "unit": "count"
+    },
+    {
+      "key": "enrolled",
+      "label": "报名数",
+      "unit": "count"
+    },
+    {
+      "key": "connections",
+      "label": "带来连接数",
+      "unit": "count"
+    },
+    {
+      "key": "sessionCount",
+      "label": "课期数",
+      "unit": "count"
+    },
+    {
+      "key": "nonMemberEnrolled",
+      "label": "非会员报名数",
+      "unit": "count"
+    },
+    {
+      "key": "leads",
+      "label": "带来线索数",
+      "unit": "count"
+    }
+  ],
+  "cases": {
+    "default": {
+      "range": {
+        "start": "2026-08-28",
+        "end": "2026-11-25"
+      },
+      "previousRange": {
+        "start": "2026-05-30",
+        "end": "2026-08-27"
+      },
+      "hasData": true,
+      "sessionCount": 43,
+      "cards": [
+        {
+          "key": "effectiveRegistrations",
+          "label": "有效报名数",
+          "unit": "count",
+          "numeric": 1788,
+          "display": "1,788",
+          "previousNumeric": 1902,
+          "previousDisplay": "1,902",
+          "delta": -114,
+          "deltaDisplay": "-114",
+          "direction": "down"
+        },
+        {
+          "key": "attendanceRate",
+          "label": "出勤率",
+          "unit": "percent",
+          "numeric": 85.6,
+          "display": "85.6%",
+          "previousNumeric": 86,
+          "previousDisplay": "86.0%",
+          "delta": -0.4,
+          "deltaDisplay": "-0.4pp",
+          "direction": "down"
+        },
+        {
+          "key": "bootcampCompletionRate",
+          "label": "训练营完课率",
+          "unit": "percent",
+          "numeric": 62.5,
+          "display": "62.5%",
+          "previousNumeric": 63.2,
+          "previousDisplay": "63.2%",
+          "delta": -0.7,
+          "deltaDisplay": "-0.7pp",
+          "direction": "down"
+        },
+        {
+          "key": "satisfactionAvg",
+          "label": "满意度均分",
+          "unit": "score",
+          "numeric": 4.47,
+          "display": "4.47",
+          "previousNumeric": 4.51,
+          "previousDisplay": "4.51",
+          "delta": -0.04,
+          "deltaDisplay": "-0.04",
+          "direction": "down"
+        },
+        {
+          "key": "reviewRate",
+          "label": "评价率",
+          "unit": "percent",
+          "numeric": 68.6,
+          "display": "68.6%",
+          "previousNumeric": 66.7,
+          "previousDisplay": "66.7%",
+          "delta": 1.9,
+          "deltaDisplay": "+1.9pp",
+          "direction": "up"
+        },
+        {
+          "key": "courseConnections",
+          "label": "课程带来的连接数",
+          "unit": "count",
+          "numeric": 630,
+          "display": "630",
+          "previousNumeric": 673,
+          "previousDisplay": "673",
+          "delta": -43,
+          "deltaDisplay": "-43",
+          "direction": "down"
+        }
+      ],
+      "trend": [
+        {
+          "month": "2025-12",
+          "enrollment": 476,
+          "attendanceRate": 82.1
+        },
+        {
+          "month": "2026-01",
+          "enrollment": 547,
+          "attendanceRate": 84.5
+        },
+        {
+          "month": "2026-02",
+          "enrollment": 499,
+          "attendanceRate": 84.6
+        },
+        {
+          "month": "2026-03",
+          "enrollment": 558,
+          "attendanceRate": 84.4
+        },
+        {
+          "month": "2026-04",
+          "enrollment": 531,
+          "attendanceRate": 85.1
+        },
+        {
+          "month": "2026-05",
+          "enrollment": 558,
+          "attendanceRate": 86.7
+        },
+        {
+          "month": "2026-06",
+          "enrollment": 611,
+          "attendanceRate": 86.6
+        },
+        {
+          "month": "2026-07",
+          "enrollment": 644,
+          "attendanceRate": 86.2
+        },
+        {
+          "month": "2026-08",
+          "enrollment": 647,
+          "attendanceRate": 85.3
+        },
+        {
+          "month": "2026-09",
+          "enrollment": 596,
+          "attendanceRate": 85.7
+        },
+        {
+          "month": "2026-10",
+          "enrollment": 636,
+          "attendanceRate": 86.3
+        },
+        {
+          "month": "2026-11",
+          "enrollment": 556,
+          "attendanceRate": 84.5
+        }
+      ],
+      "ranking": [
+        {
+          "courseId": "course-10",
+          "courseName": "客户成功方法论",
+          "categoryName": "战略与管理",
+          "sessionCount": 5,
+          "enrolled": 215,
+          "attendanceRate": 83.3,
+          "satisfactionAvg": 4.45,
+          "reviewRate": 71.5,
+          "nonMemberEnrolled": 34,
+          "leads": 20,
+          "connections": 79
+        },
+        {
+          "courseId": "course-06",
+          "courseName": "智能提效训练营",
+          "categoryName": "数字运营",
+          "sessionCount": 4,
+          "enrolled": 188,
+          "attendanceRate": 83.5,
+          "satisfactionAvg": 4.54,
+          "reviewRate": 64.3,
+          "nonMemberEnrolled": 28,
+          "leads": 28,
+          "connections": 63
+        },
+        {
+          "courseId": "course-04",
+          "courseName": "产业对接闭门会",
+          "categoryName": "产业对接",
+          "sessionCount": 4,
+          "enrolled": 166,
+          "attendanceRate": 85.5,
+          "satisfactionAvg": 4.4,
+          "reviewRate": 69.7,
+          "nonMemberEnrolled": 28,
+          "leads": 18,
+          "connections": 61
+        },
+        {
+          "courseId": "course-08",
+          "courseName": "品牌叙事工作坊",
+          "categoryName": "品牌增长",
+          "sessionCount": 4,
+          "enrolled": 159,
+          "attendanceRate": 85.5,
+          "satisfactionAvg": 4.47,
+          "reviewRate": 72.8,
+          "nonMemberEnrolled": 29,
+          "leads": 18,
+          "connections": 64
+        },
+        {
+          "courseId": "course-11",
+          "courseName": "渠道生态沙盘",
+          "categoryName": "产业对接",
+          "sessionCount": 3,
+          "enrolled": 154,
+          "attendanceRate": 85.1,
+          "satisfactionAvg": 4.49,
+          "reviewRate": 77.9,
+          "nonMemberEnrolled": 28,
+          "leads": 21,
+          "connections": 45
+        },
+        {
+          "courseId": "course-03",
+          "courseName": "供应链协同营",
+          "categoryName": "产业对接",
+          "sessionCount": 4,
+          "enrolled": 151,
+          "attendanceRate": 84.8,
+          "satisfactionAvg": 4.46,
+          "reviewRate": 66.4,
+          "nonMemberEnrolled": 24,
+          "leads": 17,
+          "connections": 54
+        },
+        {
+          "courseId": "course-09",
+          "courseName": "内容增长实验室",
+          "categoryName": "品牌增长",
+          "sessionCount": 3,
+          "enrolled": 147,
+          "attendanceRate": 86.4,
+          "satisfactionAvg": 4.39,
+          "reviewRate": 73.2,
+          "nonMemberEnrolled": 21,
+          "leads": 22,
+          "connections": 43
+        },
+        {
+          "courseId": "course-02",
+          "courseName": "组织韧性研修班",
+          "categoryName": "战略与管理",
+          "sessionCount": 4,
+          "enrolled": 135,
+          "attendanceRate": 86.7,
+          "satisfactionAvg": 4.61,
+          "reviewRate": 59.8,
+          "nonMemberEnrolled": 24,
+          "leads": 15,
+          "connections": 50
+        },
+        {
+          "courseId": "course-12",
+          "courseName": "会员体验设计",
+          "categoryName": "品牌增长",
+          "sessionCount": 3,
+          "enrolled": 132,
+          "attendanceRate": 89.4,
+          "satisfactionAvg": 4.48,
+          "reviewRate": 58.5,
+          "nonMemberEnrolled": 17,
+          "leads": 18,
+          "connections": 46
+        },
+        {
+          "courseId": "course-07",
+          "courseName": "私域运营进阶",
+          "categoryName": "数字运营",
+          "sessionCount": 3,
+          "enrolled": 118,
+          "attendanceRate": 88.1,
+          "satisfactionAvg": 4.41,
+          "reviewRate": 72.1,
+          "nonMemberEnrolled": 20,
+          "leads": 15,
+          "connections": 44
+        },
+        {
+          "courseId": "course-05",
+          "courseName": "数据看板实战",
+          "categoryName": "数字运营",
+          "sessionCount": 3,
+          "enrolled": 114,
+          "attendanceRate": 84.2,
+          "satisfactionAvg": 4.45,
+          "reviewRate": 66.7,
+          "nonMemberEnrolled": 21,
+          "leads": 16,
+          "connections": 36
+        },
+        {
+          "courseId": "course-01",
+          "courseName": "增长战略工作坊",
+          "categoryName": "战略与管理",
+          "sessionCount": 3,
+          "enrolled": 109,
+          "attendanceRate": 87.2,
+          "satisfactionAvg": 4.49,
+          "reviewRate": 68.4,
+          "nonMemberEnrolled": 21,
+          "leads": 16,
+          "connections": 45
+        }
+      ]
+    },
+    "venueHill": {
+      "range": {
+        "start": "2026-08-28",
+        "end": "2026-11-25"
+      },
+      "previousRange": {
+        "start": "2026-05-30",
+        "end": "2026-08-27"
+      },
+      "hasData": true,
+      "sessionCount": 14,
+      "cards": [
+        {
+          "key": "effectiveRegistrations",
+          "label": "有效报名数",
+          "unit": "count",
+          "numeric": 599,
+          "display": "599",
+          "previousNumeric": 634,
+          "previousDisplay": "634",
+          "delta": -35,
+          "deltaDisplay": "-35",
+          "direction": "down"
+        },
+        {
+          "key": "attendanceRate",
+          "label": "出勤率",
+          "unit": "percent",
+          "numeric": 86.8,
+          "display": "86.8%",
+          "previousNumeric": 86,
+          "previousDisplay": "86.0%",
+          "delta": 0.8,
+          "deltaDisplay": "+0.8pp",
+          "direction": "up"
+        },
+        {
+          "key": "bootcampCompletionRate",
+          "label": "训练营完课率",
+          "unit": "percent",
+          "numeric": 64,
+          "display": "64.0%",
+          "previousNumeric": 61.2,
+          "previousDisplay": "61.2%",
+          "delta": 2.8,
+          "deltaDisplay": "+2.8pp",
+          "direction": "up"
+        },
+        {
+          "key": "satisfactionAvg",
+          "label": "满意度均分",
+          "unit": "score",
+          "numeric": 4.47,
+          "display": "4.47",
+          "previousNumeric": 4.51,
+          "previousDisplay": "4.51",
+          "delta": -0.04,
+          "deltaDisplay": "-0.04",
+          "direction": "down"
+        },
+        {
+          "key": "reviewRate",
+          "label": "评价率",
+          "unit": "percent",
+          "numeric": 70,
+          "display": "70.0%",
+          "previousNumeric": 63.3,
+          "previousDisplay": "63.3%",
+          "delta": 6.7,
+          "deltaDisplay": "+6.7pp",
+          "direction": "up"
+        },
+        {
+          "key": "courseConnections",
+          "label": "课程带来的连接数",
+          "unit": "count",
+          "numeric": 222,
+          "display": "222",
+          "previousNumeric": 227,
+          "previousDisplay": "227",
+          "delta": -5,
+          "deltaDisplay": "-5",
+          "direction": "down"
+        }
+      ],
+      "trend": [
+        {
+          "month": "2025-12",
+          "enrollment": 144,
+          "attendanceRate": 80.6
+        },
+        {
+          "month": "2026-01",
+          "enrollment": 188,
+          "attendanceRate": 83
+        },
+        {
+          "month": "2026-02",
+          "enrollment": 168,
+          "attendanceRate": 84.5
+        },
+        {
+          "month": "2026-03",
+          "enrollment": 178,
+          "attendanceRate": 84.3
+        },
+        {
+          "month": "2026-04",
+          "enrollment": 177,
+          "attendanceRate": 84.2
+        },
+        {
+          "month": "2026-05",
+          "enrollment": 184,
+          "attendanceRate": 89.1
+        },
+        {
+          "month": "2026-06",
+          "enrollment": 201,
+          "attendanceRate": 88.6
+        },
+        {
+          "month": "2026-07",
+          "enrollment": 204,
+          "attendanceRate": 83.8
+        },
+        {
+          "month": "2026-08",
+          "enrollment": 229,
+          "attendanceRate": 85.6
+        },
+        {
+          "month": "2026-09",
+          "enrollment": 206,
+          "attendanceRate": 89.3
+        },
+        {
+          "month": "2026-10",
+          "enrollment": 221,
+          "attendanceRate": 87.8
+        },
+        {
+          "month": "2026-11",
+          "enrollment": 172,
+          "attendanceRate": 82.6
+        }
+      ],
+      "ranking": [
+        {
+          "courseId": "course-11",
+          "courseName": "渠道生态沙盘",
+          "categoryName": "产业对接",
+          "sessionCount": 2,
+          "enrolled": 100,
+          "attendanceRate": 85,
+          "satisfactionAvg": 4.44,
+          "reviewRate": 80,
+          "nonMemberEnrolled": 19,
+          "leads": 12,
+          "connections": 29
+        },
+        {
+          "courseId": "course-09",
+          "courseName": "内容增长实验室",
+          "categoryName": "品牌增长",
+          "sessionCount": 2,
+          "enrolled": 96,
+          "attendanceRate": 85.4,
+          "satisfactionAvg": 4.41,
+          "reviewRate": 68.3,
+          "nonMemberEnrolled": 14,
+          "leads": 14,
+          "connections": 31
+        },
+        {
+          "courseId": "course-03",
+          "courseName": "供应链协同营",
+          "categoryName": "产业对接",
+          "sessionCount": 2,
+          "enrolled": 85,
+          "attendanceRate": 85.9,
+          "satisfactionAvg": 4.47,
+          "reviewRate": 67.1,
+          "nonMemberEnrolled": 13,
+          "leads": 11,
+          "connections": 37
+        },
+        {
+          "courseId": "course-06",
+          "courseName": "智能提效训练营",
+          "categoryName": "数字运营",
+          "sessionCount": 1,
+          "enrolled": 51,
+          "attendanceRate": 84.3,
+          "satisfactionAvg": 4.76,
+          "reviewRate": 76.7,
+          "nonMemberEnrolled": 8,
+          "leads": 8,
+          "connections": 25
+        },
+        {
+          "courseId": "course-10",
+          "courseName": "客户成功方法论",
+          "categoryName": "战略与管理",
+          "sessionCount": 1,
+          "enrolled": 50,
+          "attendanceRate": 84,
+          "satisfactionAvg": 4.61,
+          "reviewRate": 54.8,
+          "nonMemberEnrolled": 12,
+          "leads": 5,
+          "connections": 16
+        },
+        {
+          "courseId": "course-12",
+          "courseName": "会员体验设计",
+          "categoryName": "品牌增长",
+          "sessionCount": 1,
+          "enrolled": 47,
+          "attendanceRate": 91.5,
+          "satisfactionAvg": 4.31,
+          "reviewRate": 67.4,
+          "nonMemberEnrolled": 4,
+          "leads": 6,
+          "connections": 19
+        },
+        {
+          "courseId": "course-08",
+          "courseName": "品牌叙事工作坊",
+          "categoryName": "品牌增长",
+          "sessionCount": 1,
+          "enrolled": 40,
+          "attendanceRate": 90,
+          "satisfactionAvg": 4.22,
+          "reviewRate": 75,
+          "nonMemberEnrolled": 8,
+          "leads": 7,
+          "connections": 17
+        },
+        {
+          "courseId": "course-05",
+          "courseName": "数据看板实战",
+          "categoryName": "数字运营",
+          "sessionCount": 1,
+          "enrolled": 36,
+          "attendanceRate": 86.1,
+          "satisfactionAvg": 4.5,
+          "reviewRate": 64.5,
+          "nonMemberEnrolled": 8,
+          "leads": 6,
+          "connections": 12
+        },
+        {
+          "courseId": "course-02",
+          "courseName": "组织韧性研修班",
+          "categoryName": "战略与管理",
+          "sessionCount": 1,
+          "enrolled": 33,
+          "attendanceRate": 90.9,
+          "satisfactionAvg": 4.76,
+          "reviewRate": 70,
+          "nonMemberEnrolled": 5,
+          "leads": 5,
+          "connections": 15
+        },
+        {
+          "courseId": "course-01",
+          "courseName": "增长战略工作坊",
+          "categoryName": "战略与管理",
+          "sessionCount": 1,
+          "enrolled": 31,
+          "attendanceRate": 90.3,
+          "satisfactionAvg": 4.55,
+          "reviewRate": 71.4,
+          "nonMemberEnrolled": 5,
+          "leads": 5,
+          "connections": 14
+        },
+        {
+          "courseId": "course-07",
+          "courseName": "私域运营进阶",
+          "categoryName": "数字运营",
+          "sessionCount": 1,
+          "enrolled": 30,
+          "attendanceRate": 90,
+          "satisfactionAvg": 4.17,
+          "reviewRate": 66.7,
+          "nonMemberEnrolled": 6,
+          "leads": 4,
+          "connections": 7
+        }
+      ]
+    },
+    "venueCove": {
+      "range": {
+        "start": "2026-08-28",
+        "end": "2026-11-25"
+      },
+      "previousRange": {
+        "start": "2026-05-30",
+        "end": "2026-08-27"
+      },
+      "hasData": false,
+      "sessionCount": 0,
+      "cards": [
+        {
+          "key": "effectiveRegistrations",
+          "label": "有效报名数",
+          "unit": "count",
+          "numeric": null,
+          "display": "—",
+          "previousNumeric": null,
+          "previousDisplay": "—",
+          "delta": null,
+          "deltaDisplay": "—",
+          "direction": "none"
+        },
+        {
+          "key": "attendanceRate",
+          "label": "出勤率",
+          "unit": "percent",
+          "numeric": null,
+          "display": "—",
+          "previousNumeric": null,
+          "previousDisplay": "—",
+          "delta": null,
+          "deltaDisplay": "—",
+          "direction": "none"
+        },
+        {
+          "key": "bootcampCompletionRate",
+          "label": "训练营完课率",
+          "unit": "percent",
+          "numeric": null,
+          "display": "—",
+          "previousNumeric": null,
+          "previousDisplay": "—",
+          "delta": null,
+          "deltaDisplay": "—",
+          "direction": "none"
+        },
+        {
+          "key": "satisfactionAvg",
+          "label": "满意度均分",
+          "unit": "score",
+          "numeric": null,
+          "display": "—",
+          "previousNumeric": null,
+          "previousDisplay": "—",
+          "delta": null,
+          "deltaDisplay": "—",
+          "direction": "none"
+        },
+        {
+          "key": "reviewRate",
+          "label": "评价率",
+          "unit": "percent",
+          "numeric": null,
+          "display": "—",
+          "previousNumeric": null,
+          "previousDisplay": "—",
+          "delta": null,
+          "deltaDisplay": "—",
+          "direction": "none"
+        },
+        {
+          "key": "courseConnections",
+          "label": "课程带来的连接数",
+          "unit": "count",
+          "numeric": null,
+          "display": "—",
+          "previousNumeric": null,
+          "previousDisplay": "—",
+          "delta": null,
+          "deltaDisplay": "—",
+          "direction": "none"
+        }
+      ],
+      "trend": [
+        {
+          "month": "2025-12",
+          "enrollment": 0,
+          "attendanceRate": null
+        },
+        {
+          "month": "2026-01",
+          "enrollment": 0,
+          "attendanceRate": null
+        },
+        {
+          "month": "2026-02",
+          "enrollment": 0,
+          "attendanceRate": null
+        },
+        {
+          "month": "2026-03",
+          "enrollment": 0,
+          "attendanceRate": null
+        },
+        {
+          "month": "2026-04",
+          "enrollment": 0,
+          "attendanceRate": null
+        },
+        {
+          "month": "2026-05",
+          "enrollment": 0,
+          "attendanceRate": null
+        },
+        {
+          "month": "2026-06",
+          "enrollment": 0,
+          "attendanceRate": null
+        },
+        {
+          "month": "2026-07",
+          "enrollment": 0,
+          "attendanceRate": null
+        },
+        {
+          "month": "2026-08",
+          "enrollment": 0,
+          "attendanceRate": null
+        },
+        {
+          "month": "2026-09",
+          "enrollment": 0,
+          "attendanceRate": null
+        },
+        {
+          "month": "2026-10",
+          "enrollment": 0,
+          "attendanceRate": null
+        },
+        {
+          "month": "2026-11",
+          "enrollment": 0,
+          "attendanceRate": null
+        }
+      ],
+      "ranking": []
+    },
+    "categoryStrategy": {
+      "range": {
+        "start": "2026-08-28",
+        "end": "2026-11-25"
+      },
+      "previousRange": {
+        "start": "2026-05-30",
+        "end": "2026-08-27"
+      },
+      "hasData": true,
+      "sessionCount": 12,
+      "cards": [
+        {
+          "key": "effectiveRegistrations",
+          "label": "有效报名数",
+          "unit": "count",
+          "numeric": 459,
+          "display": "459",
+          "previousNumeric": 464,
+          "previousDisplay": "464",
+          "delta": -5,
+          "deltaDisplay": "-5",
+          "direction": "down"
+        },
+        {
+          "key": "attendanceRate",
+          "label": "出勤率",
+          "unit": "percent",
+          "numeric": 85.2,
+          "display": "85.2%",
+          "previousNumeric": 86.4,
+          "previousDisplay": "86.4%",
+          "delta": -1.2,
+          "deltaDisplay": "-1.2pp",
+          "direction": "down"
+        },
+        {
+          "key": "bootcampCompletionRate",
+          "label": "训练营完课率",
+          "unit": "percent",
+          "numeric": null,
+          "display": "—",
+          "previousNumeric": null,
+          "previousDisplay": "—",
+          "delta": null,
+          "deltaDisplay": "—",
+          "direction": "none"
+        },
+        {
+          "key": "satisfactionAvg",
+          "label": "满意度均分",
+          "unit": "score",
+          "numeric": 4.51,
+          "display": "4.51",
+          "previousNumeric": 4.5,
+          "previousDisplay": "4.50",
+          "delta": 0.01,
+          "deltaDisplay": "+0.01",
+          "direction": "up"
+        },
+        {
+          "key": "reviewRate",
+          "label": "评价率",
+          "unit": "percent",
+          "numeric": 67.3,
+          "display": "67.3%",
+          "previousNumeric": 66.8,
+          "previousDisplay": "66.8%",
+          "delta": 0.4,
+          "deltaDisplay": "+0.4pp",
+          "direction": "up"
+        },
+        {
+          "key": "courseConnections",
+          "label": "课程带来的连接数",
+          "unit": "count",
+          "numeric": 174,
+          "display": "174",
+          "previousNumeric": 143,
+          "previousDisplay": "143",
+          "delta": 31,
+          "deltaDisplay": "+31",
+          "direction": "up"
+        }
+      ],
+      "trend": [
+        {
+          "month": "2025-12",
+          "enrollment": 93,
+          "attendanceRate": 81.7
+        },
+        {
+          "month": "2026-01",
+          "enrollment": 153,
+          "attendanceRate": 83
+        },
+        {
+          "month": "2026-02",
+          "enrollment": 122,
+          "attendanceRate": 85.2
+        },
+        {
+          "month": "2026-03",
+          "enrollment": 142,
+          "attendanceRate": 84.5
+        },
+        {
+          "month": "2026-04",
+          "enrollment": 88,
+          "attendanceRate": 86.4
+        },
+        {
+          "month": "2026-05",
+          "enrollment": 163,
+          "attendanceRate": 85.3
+        },
+        {
+          "month": "2026-06",
+          "enrollment": 160,
+          "attendanceRate": 88.1
+        },
+        {
+          "month": "2026-07",
+          "enrollment": 177,
+          "attendanceRate": 87
+        },
+        {
+          "month": "2026-08",
+          "enrollment": 127,
+          "attendanceRate": 83.5
+        },
+        {
+          "month": "2026-09",
+          "enrollment": 144,
+          "attendanceRate": 83.3
+        },
+        {
+          "month": "2026-10",
+          "enrollment": 161,
+          "attendanceRate": 86.3
+        },
+        {
+          "month": "2026-11",
+          "enrollment": 154,
+          "attendanceRate": 85.7
+        }
+      ],
+      "ranking": [
+        {
+          "courseId": "course-10",
+          "courseName": "客户成功方法论",
+          "categoryName": "战略与管理",
+          "sessionCount": 5,
+          "enrolled": 215,
+          "attendanceRate": 83.3,
+          "satisfactionAvg": 4.45,
+          "reviewRate": 71.5,
+          "nonMemberEnrolled": 34,
+          "leads": 20,
+          "connections": 79
+        },
+        {
+          "courseId": "course-02",
+          "courseName": "组织韧性研修班",
+          "categoryName": "战略与管理",
+          "sessionCount": 4,
+          "enrolled": 135,
+          "attendanceRate": 86.7,
+          "satisfactionAvg": 4.61,
+          "reviewRate": 59.8,
+          "nonMemberEnrolled": 24,
+          "leads": 15,
+          "connections": 50
+        },
+        {
+          "courseId": "course-01",
+          "courseName": "增长战略工作坊",
+          "categoryName": "战略与管理",
+          "sessionCount": 3,
+          "enrolled": 109,
+          "attendanceRate": 87.2,
+          "satisfactionAvg": 4.49,
+          "reviewRate": 68.4,
+          "nonMemberEnrolled": 21,
+          "leads": 16,
+          "connections": 45
+        }
+      ]
+    },
+    "last30": {
+      "range": {
+        "start": "2026-10-27",
+        "end": "2026-11-25"
+      },
+      "previousRange": {
+        "start": "2026-09-27",
+        "end": "2026-10-26"
+      },
+      "hasData": true,
+      "sessionCount": 13,
+      "cards": [
+        {
+          "key": "effectiveRegistrations",
+          "label": "有效报名数",
+          "unit": "count",
+          "numeric": 556,
+          "display": "556",
+          "previousNumeric": 687,
+          "previousDisplay": "687",
+          "delta": -131,
+          "deltaDisplay": "-131",
+          "direction": "down"
+        },
+        {
+          "key": "attendanceRate",
+          "label": "出勤率",
+          "unit": "percent",
+          "numeric": 84.5,
+          "display": "84.5%",
+          "previousNumeric": 86.6,
+          "previousDisplay": "86.6%",
+          "delta": -2.1,
+          "deltaDisplay": "-2.1pp",
+          "direction": "down"
+        },
+        {
+          "key": "bootcampCompletionRate",
+          "label": "训练营完课率",
+          "unit": "percent",
+          "numeric": 59,
+          "display": "59.0%",
+          "previousNumeric": 65.8,
+          "previousDisplay": "65.8%",
+          "delta": -6.9,
+          "deltaDisplay": "-6.9pp",
+          "direction": "down"
+        },
+        {
+          "key": "satisfactionAvg",
+          "label": "满意度均分",
+          "unit": "score",
+          "numeric": 4.48,
+          "display": "4.48",
+          "previousNumeric": 4.48,
+          "previousDisplay": "4.48",
+          "delta": 0,
+          "deltaDisplay": "0",
+          "direction": "flat"
+        },
+        {
+          "key": "reviewRate",
+          "label": "评价率",
+          "unit": "percent",
+          "numeric": 68.9,
+          "display": "68.9%",
+          "previousNumeric": 71.1,
+          "previousDisplay": "71.1%",
+          "delta": -2.2,
+          "deltaDisplay": "-2.2pp",
+          "direction": "down"
+        },
+        {
+          "key": "courseConnections",
+          "label": "课程带来的连接数",
+          "unit": "count",
+          "numeric": 193,
+          "display": "193",
+          "previousNumeric": 243,
+          "previousDisplay": "243",
+          "delta": -50,
+          "deltaDisplay": "-50",
+          "direction": "down"
+        }
+      ],
+      "trend": [
+        {
+          "month": "2025-12",
+          "enrollment": 476,
+          "attendanceRate": 82.1
+        },
+        {
+          "month": "2026-01",
+          "enrollment": 547,
+          "attendanceRate": 84.5
+        },
+        {
+          "month": "2026-02",
+          "enrollment": 499,
+          "attendanceRate": 84.6
+        },
+        {
+          "month": "2026-03",
+          "enrollment": 558,
+          "attendanceRate": 84.4
+        },
+        {
+          "month": "2026-04",
+          "enrollment": 531,
+          "attendanceRate": 85.1
+        },
+        {
+          "month": "2026-05",
+          "enrollment": 558,
+          "attendanceRate": 86.7
+        },
+        {
+          "month": "2026-06",
+          "enrollment": 611,
+          "attendanceRate": 86.6
+        },
+        {
+          "month": "2026-07",
+          "enrollment": 644,
+          "attendanceRate": 86.2
+        },
+        {
+          "month": "2026-08",
+          "enrollment": 647,
+          "attendanceRate": 85.3
+        },
+        {
+          "month": "2026-09",
+          "enrollment": 596,
+          "attendanceRate": 85.7
+        },
+        {
+          "month": "2026-10",
+          "enrollment": 636,
+          "attendanceRate": 86.3
+        },
+        {
+          "month": "2026-11",
+          "enrollment": 556,
+          "attendanceRate": 84.5
+        }
+      ],
+      "ranking": [
+        {
+          "courseId": "course-04",
+          "courseName": "产业对接闭门会",
+          "categoryName": "产业对接",
+          "sessionCount": 2,
+          "enrolled": 92,
+          "attendanceRate": 84.8,
+          "satisfactionAvg": 4.18,
+          "reviewRate": 62.8,
+          "nonMemberEnrolled": 17,
+          "leads": 11,
+          "connections": 35
+        },
+        {
+          "courseId": "course-06",
+          "courseName": "智能提效训练营",
+          "categoryName": "数字运营",
+          "sessionCount": 2,
+          "enrolled": 88,
+          "attendanceRate": 86.4,
+          "satisfactionAvg": 4.48,
+          "reviewRate": 60.5,
+          "nonMemberEnrolled": 12,
+          "leads": 13,
+          "connections": 25
+        },
+        {
+          "courseId": "course-10",
+          "courseName": "客户成功方法论",
+          "categoryName": "战略与管理",
+          "sessionCount": 2,
+          "enrolled": 87,
+          "attendanceRate": 83.9,
+          "satisfactionAvg": 4.52,
+          "reviewRate": 76.7,
+          "nonMemberEnrolled": 13,
+          "leads": 6,
+          "connections": 24
+        },
+        {
+          "courseId": "course-08",
+          "courseName": "品牌叙事工作坊",
+          "categoryName": "品牌增长",
+          "sessionCount": 2,
+          "enrolled": 81,
+          "attendanceRate": 86.4,
+          "satisfactionAvg": 4.57,
+          "reviewRate": 72.9,
+          "nonMemberEnrolled": 13,
+          "leads": 8,
+          "connections": 37
+        },
+        {
+          "courseId": "course-11",
+          "courseName": "渠道生态沙盘",
+          "categoryName": "产业对接",
+          "sessionCount": 1,
+          "enrolled": 49,
+          "attendanceRate": 79.6,
+          "satisfactionAvg": 4.39,
+          "reviewRate": 79.5,
+          "nonMemberEnrolled": 12,
+          "leads": 4,
+          "connections": 15
+        },
+        {
+          "courseId": "course-03",
+          "courseName": "供应链协同营",
+          "categoryName": "产业对接",
+          "sessionCount": 1,
+          "enrolled": 46,
+          "attendanceRate": 80.4,
+          "satisfactionAvg": 4.5,
+          "reviewRate": 81.1,
+          "nonMemberEnrolled": 7,
+          "leads": 6,
+          "connections": 20
+        },
+        {
+          "courseId": "course-09",
+          "courseName": "内容增长实验室",
+          "categoryName": "品牌增长",
+          "sessionCount": 1,
+          "enrolled": 46,
+          "attendanceRate": 82.6,
+          "satisfactionAvg": 4.64,
+          "reviewRate": 65.8,
+          "nonMemberEnrolled": 9,
+          "leads": 7,
+          "connections": 13
+        },
+        {
+          "courseId": "course-02",
+          "courseName": "组织韧性研修班",
+          "categoryName": "战略与管理",
+          "sessionCount": 1,
+          "enrolled": 36,
+          "attendanceRate": 86.1,
+          "satisfactionAvg": 4.81,
+          "reviewRate": 51.6,
+          "nonMemberEnrolled": 8,
+          "leads": 3,
+          "connections": 10
+        },
+        {
+          "courseId": "course-01",
+          "courseName": "增长战略工作坊",
+          "categoryName": "战略与管理",
+          "sessionCount": 1,
+          "enrolled": 31,
+          "attendanceRate": 90.3,
+          "satisfactionAvg": 4.55,
+          "reviewRate": 71.4,
+          "nonMemberEnrolled": 5,
+          "leads": 5,
+          "connections": 14
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+$ node scripts/capture-video.mjs
+# exit=0
+# duration=22079ms
+
+➜  Local:   <url>
+录屏写入 docs/recordings/ac3-venue-switch.webm（4348497 字节）
+sha256: 358db7cf041d1499058bac023f389a32b00df78f4064ea954040b4e16af472a5

@@ -1,0 +1,117 @@
+[
+  {
+    "key": "effectiveRegistrations",
+    "label": "有效报名数",
+    "unit": "count",
+    "appliesTo": [
+      "cards",
+      "table"
+    ],
+    "definition": "统计周期内各课期「已确认」报名人数之和；取消、候补与重复报名不计。数据取自课期报名报表的去重报名人数。",
+    "comparison": "与紧邻的上一同等长度时间段对比，会所与课程类别筛选保持一致。"
+  },
+  {
+    "key": "attendanceRate",
+    "label": "出勤率",
+    "unit": "percent",
+    "appliesTo": [
+      "cards",
+      "table"
+    ],
+    "definition": "统计周期内实际签到人数 ÷ 有效报名人数 × 100%，按全部课期汇总后计算，不对各课期比率做简单平均。",
+    "comparison": "与紧邻的上一同等长度时间段对比，变化值以百分点（pp）计。"
+  },
+  {
+    "key": "bootcampCompletionRate",
+    "label": "训练营完课率",
+    "unit": "percent",
+    "appliesTo": [
+      "cards"
+    ],
+    "definition": "统计周期内训练营课期完成全部课次的人数 ÷ 训练营有效报名人数 × 100%；仅统计课程类型为「训练营」的课期，普通课程不参与。",
+    "comparison": "与紧邻的上一同等长度时间段对比，变化值以百分点（pp）计。"
+  },
+  {
+    "key": "satisfactionAvg",
+    "label": "满意度均分",
+    "unit": "score",
+    "appliesTo": [
+      "cards",
+      "table"
+    ],
+    "definition": "统计周期内课后评价评分总和 ÷ 评价份数，满分 5 分，保留 2 位小数；周期内无评价时显示「—」。",
+    "comparison": "与紧邻的上一同等长度时间段对比，变化值为分数差值。"
+  },
+  {
+    "key": "reviewRate",
+    "label": "评价率",
+    "unit": "percent",
+    "appliesTo": [
+      "cards",
+      "table"
+    ],
+    "definition": "统计周期内提交课后评价的人数 ÷ 实际出勤人数 × 100%，衡量出勤学员的评价参与度。",
+    "comparison": "与紧邻的上一同等长度时间段对比，变化值以百分点（pp）计。"
+  },
+  {
+    "key": "courseConnections",
+    "label": "课程带来的连接数",
+    "unit": "count",
+    "appliesTo": [
+      "cards",
+      "table"
+    ],
+    "definition": "由课期活动直接促成、且已归因到具体课期的会员间连接数之和；同一对会员在同一课期多次连接只计一次。",
+    "comparison": "与紧邻的上一同等长度时间段对比，变化值为绝对差值。"
+  },
+  {
+    "key": "enrolled",
+    "label": "报名数",
+    "unit": "count",
+    "appliesTo": [
+      "table"
+    ],
+    "definition": "统计周期内、所选会所与课程类别下的课期报名人数之和；取消、候补与重复报名不计。",
+    "comparison": "仅展示当前周期，不做环比。"
+  },
+  {
+    "key": "connections",
+    "label": "带来连接数",
+    "unit": "count",
+    "appliesTo": [
+      "table"
+    ],
+    "definition": "由课期活动直接促成、且已归因到该课程的会员间连接数之和；同一对会员在同一课期多次连接只计一次。",
+    "comparison": "仅展示当前周期，不做环比。"
+  },
+  {
+    "key": "sessionCount",
+    "label": "课期数",
+    "unit": "count",
+    "appliesTo": [
+      "table"
+    ],
+    "definition": "统计周期内、所选会所与课程类别下的课期数量；同一课程的不同日期分别计期。",
+    "comparison": "仅展示当前周期，不做环比。"
+  },
+  {
+    "key": "nonMemberEnrolled",
+    "label": "非会员报名数",
+    "unit": "count",
+    "appliesTo": [
+      "table"
+    ],
+    "definition": "有效报名中，报名时尚未取得会员身份的报名人数；已包含在报名数内，不重复计数。",
+    "comparison": "仅展示当前周期，不做环比。"
+  },
+  {
+    "key": "leads",
+    "label": "带来线索数",
+    "unit": "count",
+    "appliesTo": [
+      "table"
+    ],
+    "definition": "课期现场登记、尚未转化为会员的潜在客户线索数之和；按课期归因，不含线上自然咨询。",
+    "comparison": "仅展示当前周期，不做环比。"
+  }
+]

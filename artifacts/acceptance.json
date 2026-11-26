@@ -1,0 +1,160 @@
+{
+  "passed": true,
+  "status": "PASS",
+  "startedAt": "2026-11-26T06:42:42.178Z",
+  "finishedAt": "2026-11-26T06:44:37.213Z",
+  "steps": [
+    {
+      "id": "data",
+      "title": "独立口径重算（从 mock JSON 重算 6 卡/上一周期/趋势/排行）",
+      "command": "node scripts/check-stats.mjs",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 230,
+      "logPath": "artifacts/logs/data.log",
+      "outputTail": "独立重算完成 → artifacts/expected-stats.json\n课期 268 · 默认区间 2026-08-28..2026-11-25 · 课期数 43 · 排行 12 门课程\n  有效报名数 = 1,788（上一周期 1,902，-114）\n  出勤率 = 85.6%（上一周期 86.0%，-0.4pp）\n  训练营完课率 = 62.5%（上一周期 63.2%，-0.7pp）\n  满意度均分 = 4.47（上一周期 4.51，-0.04）\n  评价率 = 68.6%（上一周期 66.7%，+1.9pp）\n  课程带来的连接数 = 630（上一周期 673，-43）\nRESULT: PASS 数据校验与独立重算通过"
+    },
+    {
+      "id": "negative",
+      "title": "反例校验（出勤>报名、评价越界、重复 id、未知课程、删口径必须被拒绝）",
+      "command": "node scripts/check-stats.mjs --self-test",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 181,
+      "logPath": "artifacts/logs/negative.log",
+      "outputTail": "PASS 反例被拒绝：出勤大于报名 → 出勤大于报名: sess-0001\nPASS 反例被拒绝：评价总分超过 5 分制上限 → 评价总分超过 5 分制上限: sess-0001\nPASS 反例被拒绝：课期 id 重复 → 课期 id 重复: sess-0001\nPASS 反例被拒绝：引用未知课程 → 课期引用未知课程: sess-0001\nPASS 反例被拒绝：删除指标口径 → 缺少指标口径: reviewRate\nRESULT: PASS self-test 5/5 反例被独立校验器拒绝"
+    },
+    {
+      "id": "typecheck",
+      "title": "独立类型检查",
+      "command": "npx tsc --noEmit",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 6910,
+      "logPath": "artifacts/logs/typecheck.log",
+      "outputTail": ""
+    },
+    {
+      "id": "build",
+      "title": "生产构建（含类型检查）",
+      "command": "node scripts/build.mjs",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 64016,
+      "logPath": "artifacts/logs/build.log",
+      "outputTail": "[build] typecheck\nvite v5.4.11 building for production...\ntransforming...\n✓ 4499 modules transformed.\nrendering chunks...\ncomputing gzip size...\ndist/index.html                       0.93 kB │ gzip:   0.56 kB\ndist/assets/index-BrmIaS4Z.css        6.84 kB │ gzip:   1.89 kB\ndist/assets/tdesign-CW4a_cX0.css    533.66 kB │ gzip:  55.87 kB\ndist/assets/index-Dg4qLK90.js        77.42 kB │ gzip:  16.29 kB\ndist/assets/react-CUJ3Yvll.js       160.93 kB │ gzip:  52.40 kB\ndist/assets/tdesign-DVVHaRPp.js     636.62 kB │ gzip: 186.33 kB\ndist/assets/echarts-Co_c3tkW.js   1,045.81 kB │ gzip: 347.47 kB\n✓ built in 56.32s\n[build] 完成"
+    },
+    {
+      "id": "unit",
+      "title": "单元测试（区间/上一周期/6 指标/空数据/格式化）",
+      "command": "node node_modules/vitest/vitest.mjs run",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 2876,
+      "logPath": "artifacts/logs/unit.log",
+      "outputTail": "RUN  v2.1.8 <path>\n\n ✓ src/domain/stats.test.ts (13 tests) 31ms\n\n Test Files  1 passed (1)\n      Tests  13 passed (13)\n   Start at  14:43:54\n   Duration  1.60s (transform 127ms, setup 0ms, collect 172ms, tests 31ms, environment 0ms, prepare 263ms)"
+    },
+    {
+      "id": "e2e",
+      "title": "端到端验收（固定时钟 + 1440 宽 + 5 张证据截图）",
+      "command": "node scripts/e2e.mjs",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 18526,
+      "logPath": "artifacts/logs/e2e.log",
+      "outputTail": "➜  Local:   <url>\nRESULT: PASS e2e 断言 676 项，截图 5 张。\n覆盖：默认 90 天 6 卡/12 月双轴/10 列排行、问号口径提示、排序升降序、会所与类别筛选全量刷新、30 天快捷区间、空会所空状态、重置。"
+    },
+    {
+      "id": "video",
+      "title": "AC3 真实录屏（Playwright WebM，会所切换交互）",
+      "command": "node scripts/capture-video.mjs",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 22080,
+      "logPath": "artifacts/logs/video.log",
+      "outputTail": "➜  Local:   <url>\n录屏写入 docs/recordings/ac3-venue-switch.webm（4348497 字节）\nsha256: 358db7cf041d1499058bac023f389a32b00df78f4064ea954040b4e16af472a5"
+    },
+    {
+      "id": "probe",
+      "title": "录屏探针（WebM 容器 + 8–15 秒时长）",
+      "command": "node scripts/probe-webm.mjs",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 148,
+      "logPath": "artifacts/logs/probe.log",
+      "outputTail": "{\n  \"file\": \"docs/recordings/ac3-venue-switch.webm\",\n  \"format\": \"matroska,webm\",\n  \"codec\": \"V_VP9\",\n  \"clusters\": 3,\n  \"duration\": 13.56,\n  \"durationSource\": \"segment-info\",\n  \"size\": 4348497,\n  \"min\": 8,\n  \"max\": 15\n}\nRESULT: PASS 录屏 13.56s，4348497 字节，容器 matroska,webm"
+    },
+    {
+      "id": "evidence",
+      "title": "证据校验（SHA-256 / 字节 / 生成时间 / 反例：旧证据被拒绝）",
+      "command": "internal:verifyEvidence",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 0,
+      "logPath": null,
+      "outputTail": ""
+    }
+  ],
+  "evidence": [
+    {
+      "path": "docs/screens/ac1-academy-stats.png",
+      "sha256": "6f3e5a6f48f0b2f1ba0f84c80003b93cb002a09d0d320850f40b5d24fb69d391",
+      "bytes": 171790,
+      "generatedAt": 1795675440961
+    },
+    {
+      "path": "docs/screens/ac1b-ranking-sort-asc.png",
+      "sha256": "b56bad131c767e5a09c5c3eaf2275a97babd379422989926f111bb202ed66288",
+      "bytes": 172829,
+      "generatedAt": 1795675444543
+    },
+    {
+      "path": "docs/screens/ac2-metric-tooltip.png",
+      "sha256": "ba2d72fdb5397a910f17f65a1dcdd0542b236d3b74b579ec5a3bffd45e6c6167",
+      "bytes": 147837,
+      "generatedAt": 1795675441768
+    },
+    {
+      "path": "docs/screens/ac3a-venue-hill.png",
+      "sha256": "fac005b656b96ed26f6fe4fccb85b1c32428f3ced00f6c22d289f79bdfc607a0",
+      "bytes": 167691,
+      "generatedAt": 1795675446509
+    },
+    {
+      "path": "docs/screens/ac4-empty-state.png",
+      "sha256": "f71ac792862fbd094f568470c7d19ab5c6929e619a1cbce6f658f242aa661629",
+      "bytes": 84445,
+      "generatedAt": 1795675448930
+    },
+    {
+      "path": "docs/recordings/ac3-venue-switch.webm",
+      "sha256": "358db7cf041d1499058bac023f389a32b00df78f4064ea954040b4e16af472a5",
+      "bytes": 4348497,
+      "generatedAt": 1795675471487
+    },
+    {
+      "path": "artifacts/expected-stats.json",
+      "sha256": "8a04e9db6df39b6eaf7c0359e3b0e5fa12c41de848693a3ab83bffd522180e52",
+      "bytes": 33627,
+      "generatedAt": 1795675362427
+    },
+    {
+      "path": "artifacts/e2e-result.json",
+      "sha256": "4539362ff3d8317fdd6f4d376586d29aa1b7e29ba2a3bbdc1522c2307b7e296f",
+      "bytes": 1628,
+      "generatedAt": 1795675449952
+    },
+    {
+      "path": "artifacts/video-result.json",
+      "sha256": "fa5d1f566386fc0dccc6a70279cb3500d28c82f77ced15bf4f449974c10c5f3f",
+      "bytes": 417,
+      "generatedAt": 1795675472031
+    }
+  ],
+  "evidence_manifest": "artifacts/evidence.json",
+  "failedSteps": [],
+  "all_passed": true,
+  "finished_at": "2026-11-26T06:44:37.213Z",
+  "tests_passed": 13,
+  "assertions": 676
+}

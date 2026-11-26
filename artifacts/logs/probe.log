@@ -1,0 +1,16 @@
+$ node scripts/probe-webm.mjs
+# exit=0
+# duration=147ms
+
+{
+  "file": "docs/recordings/ac3-venue-switch.webm",
+  "format": "matroska,webm",
+  "codec": "V_VP9",
+  "clusters": 3,
+  "duration": 13.56,
+  "durationSource": "segment-info",
+  "size": 4348497,
+  "min": 8,
+  "max": 15
+}
+RESULT: PASS 录屏 13.56s，4348497 字节，容器 matroska,webm

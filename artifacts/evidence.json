@@ -1,0 +1,56 @@
+{
+  "count": 10,
+  "files": [
+    {
+      "path": "artifacts/acceptance.json",
+      "sha256": "115625d7794bce00ecb5817a399741b99e5f208fc4b9775e2b94882e8fecb556",
+      "bytes": 7544
+    },
+    {
+      "path": "docs/screens/ac1-academy-stats.png",
+      "sha256": "6f3e5a6f48f0b2f1ba0f84c80003b93cb002a09d0d320850f40b5d24fb69d391",
+      "bytes": 171790
+    },
+    {
+      "path": "docs/screens/ac1b-ranking-sort-asc.png",
+      "sha256": "b56bad131c767e5a09c5c3eaf2275a97babd379422989926f111bb202ed66288",
+      "bytes": 172829
+    },
+    {
+      "path": "docs/screens/ac2-metric-tooltip.png",
+      "sha256": "ba2d72fdb5397a910f17f65a1dcdd0542b236d3b74b579ec5a3bffd45e6c6167",
+      "bytes": 147837
+    },
+    {
+      "path": "docs/screens/ac3a-venue-hill.png",
+      "sha256": "fac005b656b96ed26f6fe4fccb85b1c32428f3ced00f6c22d289f79bdfc607a0",
+      "bytes": 167691
+    },
+    {
+      "path": "docs/screens/ac4-empty-state.png",
+      "sha256": "f71ac792862fbd094f568470c7d19ab5c6929e619a1cbce6f658f242aa661629",
+      "bytes": 84445
+    },
+    {
+      "path": "docs/recordings/ac3-venue-switch.webm",
+      "sha256": "358db7cf041d1499058bac023f389a32b00df78f4064ea954040b4e16af472a5",
+      "bytes": 4348497
+    },
+    {
+      "path": "artifacts/expected-stats.json",
+      "sha256": "8a04e9db6df39b6eaf7c0359e3b0e5fa12c41de848693a3ab83bffd522180e52",
+      "bytes": 33627
+    },
+    {
+      "path": "artifacts/e2e-result.json",
+      "sha256": "4539362ff3d8317fdd6f4d376586d29aa1b7e29ba2a3bbdc1522c2307b7e296f",
+      "bytes": 1628
+    },
+    {
+      "path": "artifacts/video-result.json",
+      "sha256": "fa5d1f566386fc0dccc6a70279cb3500d28c82f77ced15bf4f449974c10c5f3f",
+      "bytes": 417
+    }
+  ],
+  "missing": []
+}
